@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def helloWorld():
-	return "Testando PRIMEIRA rota :D ! Insira /teste na URL"
+	return "Teste da primeira rota no vídeo do Samuel."
 
-@app.route("/teste", methods=["GET"])
+@app.route("/youtube", methods=["GET"])
 def teste():
-    return "Testando segunda rota :D  !"
+    return "Rota do youtube funcionando!"
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
